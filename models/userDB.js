@@ -20,7 +20,7 @@ function getUsers(callback) {
   connection.execute(sql, (err, results) => {
     if (err) {
       console.error('Error fetching users:', err);
-      return callback(null);        // no throw — server.js expects an array
+      return callback(null);
     }
     callback(results);
   });
